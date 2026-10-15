@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ERP Full Stack Project</title>
+</head>
+
+<body>
+
+    <h1>ERP Full Stack Project</h1>
+
+    <p>Frontend: ✅ Running</p>
+    <p>Backend: <span id="backend">Checking...</span></p>
+    <p>Database: <span id="database">Checking...</span></p>
+
+    <script>
+        fetch("http://localhost:5000/status")
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("backend").textContent =
+                    "✅ " + data.backend;
+
+                document.getElementById("database").textContent =
+                    "✅ " + data.database;
+            })
+            .catch(() => {
+                document.getElementById("backend").textContent =
+                    "❌ Not Connected";
+
+                document.getElementById("database").textContent =
+                    "❌ Not Connected";
+            });
+    </script>
+
+</body>
+</html>

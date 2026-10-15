@@ -1,0 +1,70 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+
+# Build files
+dist/
+build/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Generated Prisma client
+backend/generated/
+
+
+# Prisma editor skill files
+backend/.agents/
+backend/.claude/
+backend/.cursor/
+backend/.devin/
+backend/.windsurf/
+backend/skills-lock.json
+
+# Extra nested Vite starter folder
+frontend/y/
+
+
+backend/.agents/
+backend/.claude/
+backend/.cursor/
+backend/.devin/
+backend/.windsurf/
+backend/skills-lock.json
+frontend/y/
+
+
+
+# Prisma editor-generated files
+backend/.agents/
+backend/.claude/
+backend/.cursor/
+backend/.devin/
+backend/.windsurf/
+backend/skills-lock.json
+
+# Local dependencies and environment files
+node_modules/
+**/node_modules/
+.env
+.env.*
+**/.env
+**/.env.*
+!.env.example
+**/generated/
+
+# Prisma editor-generated files
+backend/.agents/
+backend/.claude/
+backend/.cursor/
+backend/.devin/
+backend/.windsurf/
+backend/skills-lock.json
